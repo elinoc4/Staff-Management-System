@@ -1,0 +1,24 @@
+<form>
+	<input type="password" name="" id="p1">
+	<input type="password" name="" id="p2">
+	<input type="submit" name="">
+</form>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){		 
+		$('#p2').keyup(function(){
+			var p1=$('#p1').val();
+		var p2=$('#p2').val();
+		var pi=$('#p1').val().length;
+		var pj=$('#p2').val().length;
+		 	if (p1!=p2) {
+		 		alert('passwords dont match');
+		 	}else if (pj<6) {
+		 		alert('passwords too short');
+		 	}
+alert(pi);
+		})
+
+
+	})
+</script>
